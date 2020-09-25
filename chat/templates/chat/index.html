@@ -1,0 +1,44 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <title>PawlakTech</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% bootstrap_css %}
+        {% bootstrap_javascript jquery='full'%}
+        <link rel='stylesheet' href="{% static 'css/index.css' %}" > 
+    </head>
+    
+    <body>
+        <div class='container'>
+            <div class='jumbotron'>
+                <div class='row'>
+                    <div class='col-sm-6'>
+                        <h1 class='display-3'>Messaging Web-App</h1>
+                        <a class='btn btn-primary btn-large' href="{% url 'selectRoom' %}">Begin</a>
+                        <hr/>
+                    </div>
+                    <div class='col-sm-6'>
+                        <h1>Work in Progress</h1>
+                        <h3>Next Tasks</h3>
+                        <ul>
+                            <li>Your messages on right side in blue, their messages on left side in grey</li>
+                            <li>Authentication</li>
+                            <li>Usernames appear besides messages</li>
+                            <li>Timestamps</li>
+                            <li>Save messages</li>
+                            <li>Groups</li>
+                            <li>Conversations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+
+</html>
